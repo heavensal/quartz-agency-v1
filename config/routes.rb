@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  root 'pages#home'
+  get 'coaching', to: 'pages#coaching', as: 'coaching'
+  get 'ucg', to: 'pages#ucg', as: 'ucg'
+  get 'contenu', to: 'pages#contenu', as: 'contenu'
+  get 'masterclass', to: 'pages#masterclass', as: 'masterclass'
+  get 'communitymanagement', to: 'pages#communitymanagement', as: 'communitymanagement'
+  get 'website', to: 'pages#website', as: 'website'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
