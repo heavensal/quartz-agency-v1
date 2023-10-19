@@ -1,4 +1,20 @@
-<h1>Pages#home <p>salut</p></h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
 
-<%= link_to "coaching", coaching_path %>
+  <div class="video">
+    <%= image_tag("")%>
+  </div>
+
+  <div class="btn-contact">
+    <%= link_to "Nous contacter", "#contact", aria: {label:"Contact"}%>
+  </div>
+</div>
+
+<%= render "pages/home/competences"%>
+
+<%= render "pages/home/clients"%>
+
+<%= render "pages/home/apropos"%>
+
+<%= render "pages/home/contact"%>
+
+<%= render "pages/home/footer"%>
