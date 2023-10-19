@@ -1,0 +1,27 @@
+.grille{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .clair{
+    background-color: #1DE9B6;
+    font-family: "belleza", sans-serif;
+    }
+
+
+  .fonce {
+    background-color: #009688;
+    font-family: "belleza", sans-serif;
+    }
+  }
+
+  @media(min-width: 768px) and (max-width: 1388px) {
+    // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
+  }
+
+  @media(max-width: 767px) {
+    .grille{
+      display: grid;
+      grid-template-columns: auto;
+    }
+
+  }

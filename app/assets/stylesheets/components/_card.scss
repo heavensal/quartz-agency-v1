@@ -14,26 +14,33 @@
 
   background-color: #009688;
   border-right: 1px solid black;
+  h1 {
+    color: #FDB8BA;
+  text-align: center;
+  font-family: 'cinzel', sans-serif;
+  }
   p {
     text-align: center;
-    color: #1DE9B6;
+    color: #FDB8BA;
     font-size: medium;
+    font-family: 'belleza', sans-serif;
   }
 }
 
 .competences-1{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: end;
-  justify-content: end;
+  align-items: center;
+  justify-items: end;
+  justify-content: space-around;
   margin-bottom: 2em;
 }
 
 .competences-2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: first baseline;
-  justify-content: center;
+  align-items: start;
+  justify-items: start;
   margin-bottom: 2em;
 }
 
@@ -45,13 +52,14 @@
   justify-content: center;
   border-radius: 50%;
   background-color: #1DE9B6;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   margin: 1em;
   p {
     text-align: center;
     font-size: 14px;
     color: #E51C23;
+    font-family: 'belleza', sans-serif;
   }
 }
 
@@ -61,6 +69,7 @@
   text-align: center;
   margin-top: 2%;
   text-align: center;
+  font-family: 'cinzel', sans-serif;
 }
 
 .anais {
@@ -78,17 +87,10 @@ img {
 p {
   color: #FDB8BA;
   box-shadow: 5px #FDB8BA;
+  font-family: 'belleza', sans-serif;
 }
 }
 
-.footer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  background-color: #009688;
-p {
-  color: black;
-}
-}
 
 @media(min-width: 768px) and (max-width: 1388px) {
   // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
@@ -115,6 +117,7 @@ p {
     align-self: center;
     font-size: 14px;
     color: #E51C23;
+    font-family: 'belleza', sans-serif;
   }
 
 

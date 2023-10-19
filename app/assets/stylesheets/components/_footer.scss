@@ -1,0 +1,36 @@
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #009688;
+  align-items: center;
+p {
+  color: black;
+  margin-left: 2%;
+  font-family: 'belleza', sans-serif;
+}
+}
+
+.portfolio{
+  text-align: center;
+
+  p{
+    color: #FDB8BA;
+    font-family: 'belleza', sans-serif;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1388px) {
+  // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
+}
+
+@media(max-width: 767px) {
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rs{
+    justify-self: center;
+    align-self: center;
+  }
+}
