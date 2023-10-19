@@ -1,3 +1,30 @@
 #linkedin, #tiktok, #instagram {
   height: 100px;
 }
+
+.logo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: end;
+  color: #009688;
+
+  img{
+    height: 30px;
+    background-color: #009688;
+    fill: currentColor;
+  }
+}
+
+
+@media(min-width: 768px) and (max-width: 1388px) {
+  // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
+}
+
+@media(max-width: 767px) {
+  .logo{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center
+  }
+
+}
