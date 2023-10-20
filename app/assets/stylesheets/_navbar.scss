@@ -4,6 +4,7 @@ nav {
   justify-content: space-between;
   height: 15vh;
   width: 100vw;
+  overflow-x: hidden;
 
   section {
     width:33%;
@@ -35,7 +36,6 @@ nav {
     justify-content: flex-start;
     list-style: none;
     position: absolute;
-    right: 0;
     top: 15vh;
     height:100vh;
     background-color: #009688;
