@@ -1,0 +1,81 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.champs{
+  display: grid;
+  grid-template-rows: auto;
+  background-color: #009688;
+  align-items: center;
+  justify-items: center;
+  padding: 3%;
+  margin: 3%;
+  border-radius: 5%;
+
+  form {
+    width: 100%;
+    display: grid; // Ajoutez une grille à l'intérieur du formulaire pour centrer l'input
+    grid-template-columns: auto; // Une seule colonne pour l'input
+    align-items: center;
+    justify-items: center;
+  }
+
+  input[type="text"] {
+    width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
+    margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
+    border: none; // Enlevez la bordure si nécessaire
+    border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
+    background-color: #1DE9B6;
+  }
+  input[type="email"] {
+    width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
+    margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
+    border: none; // Enlevez la bordure si nécessaire
+    border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
+    background-color: #1DE9B6;
+  }
+
+  input[type="submit"] {
+    width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
+    margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
+    border: none; // Enlevez la bordure si nécessaire
+    border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
+    background-color: #FDB8BA;
+  }
+
+  textarea{
+    width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
+    margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
+    border: none; // Enlevez la bordure si nécessaire
+    border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
+    background-color: #1DE9B6;
+  }
+
+  label{
+    color: #FDB8BA;
+    text-align: start;
+  }
+}
+
+.infos{
+  display: grid;
+  grid-template-rows: auto;
+  width: 70%;
+}
+
+
+.btn-envoyer{
+  border-radius: 10%;
+  background-color: #FDB8BA;
+  color: #E51C23;
+  display: block;
+  text-align: center;
+  margin: 5%;
+  justify-content: center;
+}
