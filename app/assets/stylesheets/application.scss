@@ -1,1 +1,24 @@
-@import 'components/index'
+@import "font-awesome";
+
+@import 'components/index';
+@import 'navbar';
+
+// La police d'écriture, libre à vous de tester une autre !
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+}
+
+// marre de la lumiere blanche quand je travaille
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}

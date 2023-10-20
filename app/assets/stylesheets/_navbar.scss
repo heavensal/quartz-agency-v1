@@ -1,0 +1,60 @@
+nav {
+  background-color: #009688;
+  display:flex;
+  justify-content: space-between;
+  height: 15vh;
+  width: 100vw;
+
+  section {
+    width:33%;
+  }
+
+  #main-title {
+    font-size: 2em;
+    text-align: center;;
+  }
+
+  #navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #menu-button {
+    font-size: 2em;
+    margin-right: 3rem;
+
+    &:hover {
+      cursor:pointer;
+    }
+  }
+
+  #menu {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 15vh;
+    height:100vh;
+    background-color: #009688;
+    font-size: 1.5em;
+    transform-origin: right;   // Commence l'animation depuis la gauche
+    transform: translateX(100%);     // Échelle horizontale réduite à 0
+    transition: transform 0.5s ease-out;
+
+    div {
+      padding: 1em;
+      &:hover {
+        background-color: #FDB8BA;
+      }
+    }
+  }
+
+}
+
+#menu.toggle {
+  transform: translateX(0);
+  transition: transform 0.5s ease-out;
+}
