@@ -3,8 +3,9 @@ nav {
   display:flex;
   justify-content: space-between;
   height: 15vh;
-  width: 100vw;
-  overflow-x: hidden;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
 
   section {
     width:33%;
@@ -12,7 +13,7 @@ nav {
 
   #main-title {
     font-size: 2em;
-    text-align: center;;
+    text-align: center;
   }
 
   #navigation {
@@ -23,7 +24,7 @@ nav {
 
   #menu-button {
     font-size: 2em;
-    margin-right: 3rem;
+    margin-right: 3em;
 
     &:hover {
       cursor:pointer;
@@ -35,9 +36,9 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     list-style: none;
-    position: absolute;
-    top: 15vh;
-    height:100vh;
+    position:static;
+    top:15vh;
+    right: 0;
     background-color: #009688;
     font-size: 1.5em;
     transform-origin: right;   // Commence l'animation depuis la gauche
