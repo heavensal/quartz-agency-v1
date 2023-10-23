@@ -80,3 +80,14 @@
   margin: 5%;
   justify-content: center;
 }
+
+@media(min-width: 768px) and (max-width: 1388px) {
+  // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
+}
+
+@media(max-width: 767px) {
+.form{
+  display: grid;
+  grid-template-columns: auto;
+}
+}
