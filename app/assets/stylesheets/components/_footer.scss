@@ -1,9 +1,9 @@
 .footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  background-color: #009688;
+  background-color: #A782A1;
   align-items: center;
-  font-family: 'belleza', sans-serif;
+  padding: 1%;
 p {
   color: black;
   margin-left: 2%;
@@ -14,7 +14,7 @@ p {
   text-align: center;
 
   p{
-    color: #FDB8BA;
+    color: #FFF9A7;
   }
 }
 
@@ -26,6 +26,7 @@ p {
   .footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1%;
   }
 
   .rs{

@@ -12,18 +12,17 @@
 
 .chiffres {
 
-  background-color: #009688;
+  background-color: #A782A1;
   border-right: 1px solid black;
   h1 {
-    color: #FDB8BA;
+    color: #FFF9A7;
   text-align: center;
   font-family: 'cinzel', sans-serif;
   }
   p {
     text-align: center;
-    color: #FDB8BA;
     font-size: medium;
-    font-family: 'belleza', sans-serif;
+
   }
 }
 
@@ -51,45 +50,24 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #1DE9B6;
+  background-color: #A782A1;
   height: 200px;
   width: 200px;
   margin: 1em;
   p {
     text-align: center;
     font-size: 14px;
-    color: #E51C23;
-    font-family: 'belleza', sans-serif;
   }
 }
 
 
 .titre {
-  color: #1DE9B6;
   text-align: center;
   margin-top: 2%;
   text-align: center;
-  font-family: 'cinzel', sans-serif;
 }
 
-.anais {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
 
-img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  justify-self: center;
-  align-self: center;
-}
-
-p {
-  color: #FDB8BA;
-  box-shadow: 5px #FDB8BA;
-  font-family: 'belleza', sans-serif;
-}
-}
 
 
 @media(min-width: 768px) and (max-width: 1388px) {
@@ -101,12 +79,14 @@ p {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  margin-bottom: 0;
   }
 
   .competences-2 {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+
     }
 
   .competences-card{
@@ -116,8 +96,7 @@ p {
     text-align: center;
     align-self: center;
     font-size: 14px;
-    color: #E51C23;
-    font-family: 'belleza', sans-serif;
+
   }
 
 
@@ -128,8 +107,8 @@ p {
   }
 
   .chiffres{
-    border-bottom: 1px solid black;
     text-align: center;
+    margin-bottom: 1%;
   }
 
   .anais{

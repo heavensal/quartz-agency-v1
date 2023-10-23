@@ -1,18 +1,41 @@
 .grille{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-content: center;
 
   .clair{
-    background-color: #1DE9B6;
-    font-family: "belleza", sans-serif;
+    background-color: #DAAEFC;
+    img {
+      height: 150px;
+    }
     }
 
 
   .fonce {
-    background-color: #009688;
-    font-family: "belleza", sans-serif;
+    background-color: #A782A1;
     }
-  }
+}
+
+.anais {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 2%;
+}
+
+p {
+  color: #A782A1;
+  box-shadow: 5px #FDB8BA;
+  text-align: center;
+  margin: 5%;
+}
+}
 
   @media(min-width: 768px) and (max-width: 1388px) {
     // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
@@ -22,6 +45,18 @@
     .grille{
       display: grid;
       grid-template-columns: auto;
+      margin-bottom: 1%;
+
+
+      .clair{
+        margin-bottom: 1%;
+
+        }
+
+
+      .fonce {
+        margin-bottom: 1%;
+        }
     }
 
   }
