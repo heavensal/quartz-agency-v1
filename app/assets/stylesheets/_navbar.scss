@@ -1,10 +1,8 @@
 nav {
-  background-color: #009688;
   display:flex;
   justify-content: space-between;
   height: 15vh;
   position: sticky;
-  overflow: hidden;
   top: 0;
 
   section {
@@ -36,10 +34,10 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     list-style: none;
-    position:static;
+    position:absolute;
     top:15vh;
     right: 0;
-    background-color: #009688;
+    // height:84vh;
     font-size: 1.5em;
     transform-origin: right;   // Commence l'animation depuis la gauche
     transform: translateX(100%);     // Échelle horizontale réduite à 0
@@ -47,9 +45,6 @@ nav {
 
     div {
       padding: 1em;
-      &:hover {
-        background-color: #FDB8BA;
-      }
     }
   }
 
@@ -58,4 +53,8 @@ nav {
 #menu.toggle {
   transform: translateX(0);
   transition: transform 0.5s ease-out;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
