@@ -1,0 +1,15 @@
+$vert: #009688;
+$rose: #FDAEEE;
+$violet: #DAAEFC;
+
+nav {
+  background-color: $rose;
+
+  #menu {
+    background-color: $rose;
+
+    div:hover {
+      background-color: $violet;
+    }
+  }
+}

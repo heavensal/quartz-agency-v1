@@ -1,7 +1,11 @@
 @import "font-awesome";
 
 @import 'components/index';
+@import 'pages/index';
+
+@import 'colors';
 @import 'navbar';
+
 
 // La police d'écriture, libre à vous de tester une autre !
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Inter&display=swap');
@@ -15,6 +19,9 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 // marre de la lumiere blanche quand je travaille
 body {
   background-color: #FCE3D7;
@@ -33,8 +40,14 @@ body {
 
 }
 
+
 * {
   margin: 0;
+}
+
+// marre de la lumiere blanche quand je travaille A RETIRER
+body {
+  background-color: black;
 }
 
 a {

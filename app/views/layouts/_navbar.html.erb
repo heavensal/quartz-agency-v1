@@ -1,11 +1,11 @@
-<nav>
+<nav class='overflow-hidden' data-controller="navbar" data-navbar-target="nav">
   <section id="main-logo">
     <h1>logo</h1>
   </section>
   <section id='main-title'>
     <h1>Quartz Agency</h1>
   </section>
-  <section id="navigation" data-controller="navbar">
+  <section id="navigation">
     <i id='menu-button' class="fa-solid fa-bars" data-action="click->navbar#toggle"></i>
     <div id="menu" data-navbar-target="menu">
       <%= link_to '#' do %>
@@ -14,7 +14,7 @@
       <%= link_to '#' do %>
         <div>A propos</div>
       <% end %>
-      <%= link_to '#' do %>
+      <%= link_to root_path+'#contact' do %>
         <div>Nous contacter</div>
       <% end %>
       <%= link_to '#' do %>

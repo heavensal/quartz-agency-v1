@@ -4,7 +4,6 @@ nav {
   justify-content: space-between;
   height: 15vh;
   position: sticky;
-  overflow: hidden;
   top: 0;
 
   section {
@@ -36,9 +35,10 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     list-style: none;
-    position:static;
+    position:absolute;
     top:15vh;
     right: 0;
+    // height:84vh;
     background-color: #A782A1;
     font-size: 1.5em;
     transform-origin: right;   // Commence l'animation depuis la gauche
@@ -58,4 +58,8 @@ nav {
 #menu.toggle {
   transform: translateX(0);
   transition: transform 0.5s ease-out;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
