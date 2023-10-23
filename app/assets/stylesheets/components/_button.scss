@@ -1,18 +1,20 @@
 .btn-contact{
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background-color: #FDB8BA;
-  color: #E51C23;
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  background-color: #FDAEEE;
+  color: #FFF9A7;
   display: block;
   text-align: center;
-  line-height: 100px;
+  line-height: 150px;
+  border: 5px solid #FFF9A7;
 
 }
 
 .btn-contact a {
   text-decoration: none;
-  color: #E51C23;
+  color: #FFF9A7;
   font-size: 14px;
   text-align: center;
 }

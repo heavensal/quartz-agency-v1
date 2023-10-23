@@ -7,7 +7,7 @@
 .champs{
   display: grid;
   grid-template-rows: auto;
-  background-color: #009688;
+  background-color: #A782A1;
   align-items: center;
   justify-items: center;
   padding: 3%;
@@ -28,7 +28,7 @@
     margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
     border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
-    background-color: #1DE9B6;
+    background-color: #DAAEFC;
   }
   input[type="email"] {
     width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
@@ -36,7 +36,7 @@
     margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
     border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
-    background-color: #1DE9B6;
+    background-color: #DAAEFC;
   }
 
   input[type="submit"] {
@@ -44,8 +44,9 @@
     padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
     margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
-    border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
-    background-color: #FDB8BA;
+    background-color: #A782A1;
+    border-radius: 15px;
+    border: 5px solid #FDAEEE;
   }
 
   textarea{
@@ -54,11 +55,11 @@
     margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
     border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
-    background-color: #1DE9B6;
+    background-color: #DAAEFC;
   }
 
   label{
-    color: #FDB8BA;
+    color: black;
     text-align: start;
   }
 }
@@ -72,8 +73,8 @@
 
 .btn-envoyer{
   border-radius: 10%;
-  background-color: #FDB8BA;
-  color: #E51C23;
+  background-color: #A782A1;
+  color: #FFF9A7;
   display: block;
   text-align: center;
   margin: 5%;
