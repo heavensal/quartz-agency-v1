@@ -1,7 +1,10 @@
-$vert: #009688;
+
 $rose: #FDAEEE;
 $violet: #DAAEFC;
-
+$orange: #FCE3D7;
+body {
+  background-color: $orange;
+}
 nav {
   background-color: $rose;
 
