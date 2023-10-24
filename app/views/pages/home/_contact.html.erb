@@ -9,39 +9,37 @@
     <div></div>
     <div class="champs">
       <%= form_for :contact, url: root_path do |f| %>
-      <div class="infos">
         <%= f.label :nom %>
         <%= f.text_field :nom %>
-      </div>
 
-      <div class="infos">
+
+
         <%= f.label :prenom %>
         <%= f.text_field :prenom %>
-      </div>
 
-      <div class="infos">
+
+
         <%= f.label :email %>
         <%= f.email_field :email %>
-      </div>
 
-      <div class="infos">
+
+
         <%= f.label :telephone %>
         <%= f.text_field :telephone %>
-      </div>
 
-      <div class="infos">
+
+
         <%= f.label :entreprise %>
         <%= f.text_field :entreprise %>
-      </div>
 
-      <div class="infos">
+
+
         <%= f.label :message %>
         <%= f.text_area :message %>
-      </div>
 
-      <div>
+
         <%= f.submit 'Envoyer', class:"btn-envoyer" %>
-      </div>
+
 
       <% end %>
 
