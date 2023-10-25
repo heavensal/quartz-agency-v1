@@ -1,50 +1,35 @@
-<section id="contact">
-
-  <div>
-    <div class="titre">
+<section id="contact" data-controller="contact">
+  <div class="titre">
     <h2>Nous contacter</h2>
   </div>
 
   <div class="form">
-    <div></div>
     <div class="champs">
-      <%= form_for :contact, url: root_path do |f| %>
-        <%= f.label :nom %>
-        <%= f.text_field :nom %>
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" data-action="blur->contact#handleBlur" data-contact-target="nom">
+      <p class="d-none text-danger fst-italic" data-contact-target="text" style="font-size: 12px;">Le nom est obligatoire</p>
 
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" data-action="blur->contact#handleBlur" data-contact-target="prenom">
+      <p class="d-none text-danger fst-italic" data-contact-target="textPrenom" style="font-size: 12px;">Le prénom est obligatoire</p>
 
+      <label for="email">Email</label>
+      <input type="email" id="email" data-action="blur->contact#handleBlur" data-contact-target="email">
+      <p class="d-none text-danger fst-italic" data-contact-target="textEmail" style="font-size: 12px;">L'email est obligatoire</p>
 
-        <%= f.label :prenom %>
-        <%= f.text_field :prenom %>
+      <label for="telephone">Téléphone</label>
+      <input type="tel" id="telephone" data-action="blur->contact#handleBlur" data-contact-target="telephone">
+      <p class="d-none text-danger fst-italic" data-contact-target="textTel" style="font-size: 12px;">Le Téléphone est obligatoire</p>
 
+      <label for="entreprise">Nom de votre entreprise</label>
+      <input type="text" id="entreprise" data-action="blur->contact#handleBlur" data-contact-target="entreprise">
+      <p class="d-none text-danger fst-italic" data-contact-target="textEts" style="font-size: 12px;">Le nom de l'entreprise est obligatoire</p>
 
+      <label for="message">Message</label>
+      <textarea id="message" data-action="blur->contact#handleBlur" data-contact-target="message"></textarea>
+      <p class="d-none text-danger fst-italic" data-contact-target="textMessage" style="font-size: 12px;">Le message est obligatoire</p>
 
-        <%= f.label :email %>
-        <%= f.email_field :email %>
-
-
-
-        <%= f.label :telephone %>
-        <%= f.text_field :telephone %>
-
-
-
-        <%= f.label :entreprise %>
-        <%= f.text_field :entreprise %>
-
-
-
-        <%= f.label :message %>
-        <%= f.text_area :message %>
-
-
-        <%= f.submit 'Envoyer', class:"btn-envoyer" %>
-
-
-      <% end %>
-
+      <button data-action="click->contact#submitForm", class="btn-envoyer">Envoyer</button>
     </div>
-
   </div>
-
 </section>
