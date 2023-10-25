@@ -1,85 +1,130 @@
-.form {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+#contact{
+  margin-bottom: 2%;
 
+  h2{
+    margin-bottom: 1%;
+  }
+}
+
+.form{
+  width: 50%;
+  margin: auto;
 }
 
 .champs{
-  display: grid;
-  grid-template-rows: auto;
   background-color: #A782A1;
+  padding: 3%;
+  margin: auto;
+  border-radius: 5%;
+  width: 100%;
+  display: grid; // Ajoutez une grille à l'intérieur du formulaire pour centrer l'input
+  grid-template-columns: auto; // Une seule colonne pour l'input
   align-items: center;
   justify-items: center;
-  padding: 3%;
-  margin: 3%;
-  border-radius: 5%;
-
-  form {
-    width: 100%;
-    display: grid; // Ajoutez une grille à l'intérieur du formulaire pour centrer l'input
-    grid-template-columns: auto; // Une seule colonne pour l'input
-    align-items: center;
-    justify-items: center;
-  }
 
   input[type="text"] {
-    width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
-    padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
-    margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
+    width: 70%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    padding: 2%; // Ajoutez un espace intérieur pour le contenu de l'input
+    margin: 2% 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
-    border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
+    // Ajoutez un rayon de bordure si nécessaire
     background-color: #DAAEFC;
+    border-radius: 10px;
+
   }
   input[type="email"] {
-    width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
-    padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
-    margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
+    width: 70%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    padding: 2%; // Ajoutez un espace intérieur pour le contenu de l'input
+    margin: 2% 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
-    border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
+     // Ajoutez un rayon de bordure si nécessaire
     background-color: #DAAEFC;
+    border-radius: 10px;
+
   }
 
-  input[type="submit"] {
-    width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
-    padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
-    margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
+  input[type="tel"] {
+    width: 70%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    padding: 2%; // Ajoutez un espace intérieur pour le contenu de l'input
+    margin: 2% 0; // Ajoutez une marge en haut et en bas de l'input
+    border: none; // Enlevez la bordure si nécessaire
+     // Ajoutez un rayon de bordure si nécessaire
+    background-color: #DAAEFC;
+    border-radius: 10px;
+  }
+
+  textarea{
+    width: 70%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    padding: 2%; // Ajoutez un espace intérieur pour le contenu de l'input
+    margin: 2% 0; // Ajoutez une marge en haut et en bas de l'input
+    border: none; // Enlevez la bordure si nécessaire
+    border-radius: 10px; // Ajoutez un rayon de bordure si nécessaire
+    background-color: #DAAEFC;
+    text-decoration: none;
+  }
+
+  input[type="submit"]:valid {
+    width: 40%;
+    padding: 2%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    margin: 2% 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
     background-color: #A782A1;
     border-radius: 15px;
     border: 5px solid #FDAEEE;
+    font-size: 16px;
   }
 
-  textarea{
-    width: 100%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
-    padding: 10px; // Ajoutez un espace intérieur pour le contenu de l'input
-    margin: 5px 0; // Ajoutez une marge en haut et en bas de l'input
+
+  input[type="submit"]:invalid {
+    width: 30%;
+    padding: 2%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+    margin: 2% 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
-    border-radius: 5px; // Ajoutez un rayon de bordure si nécessaire
-    background-color: #DAAEFC;
+    background-color: #A782A1;
+    border-radius: 15px;
+    border: 5px solid red;
+    font-size: 16px;
+  }
+
   }
 
   label{
     color: black;
-    text-align: start;
+   width: 70%;
   }
+
+
+.is-invalid{
+  border: 1px solid red;
+  background-color: #ffeeee;
 }
 
-.infos{
-  display: grid;
-  grid-template-rows: auto;
-  width: 70%;
+.d-none{
+  display: none;
 }
+
+
+// .infos{
+//   display: grid;
+//   grid-template-rows: auto;
+//   width: 70%;
+// }
 
 
 .btn-envoyer{
-  border-radius: 10%;
+  width: 40%;
+  padding: 2%; // Définissez la largeur de l'input à 100% pour qu'il s'étende sur toute la largeur disponible
+  margin: 2% 0; // Ajoutez une marge en haut et en bas de l'input
+  border: none; // Enlevez la bordure si nécessaire
   background-color: #A782A1;
+  border-radius: 15px;
+  border: 5px solid #FDAEEE;
+  font-size: 16px;
   color: #FFF9A7;
-  display: block;
-  text-align: center;
-  margin: 5%;
-  justify-content: center;
 }
+
+
+
 
 @media(min-width: 768px) and (max-width: 1388px) {
   // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire

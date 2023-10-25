@@ -12,7 +12,9 @@
 @import url('https://fonts.googleapis.com/css2?family=bellza&family=Inter&display=swap');
 
 body {
+
   font-family: 'bellza', 'Arial', 'Helvetica', sans-serif;
+
 
 }
 
@@ -46,6 +48,11 @@ body {
 }
 
 // marre de la lumiere blanche quand je travaille A RETIRER
+
+body {
+  background-color: #FCE3D7;
+}
+
 
 a {
   text-decoration: none;
