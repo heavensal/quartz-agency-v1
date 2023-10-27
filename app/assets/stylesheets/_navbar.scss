@@ -11,7 +11,9 @@ nav {
 
   #main-title {
     font-size: 2em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #navigation {
@@ -37,7 +39,7 @@ nav {
     position:absolute;
     top:15vh;
     right: 0;
-    // height:84vh;
+    height:85vh;
     font-size: 1.5em;
     transform-origin: right;   // Commence l'animation depuis la gauche
     transform: translateX(100%);     // Échelle horizontale réduite à 0

@@ -20,36 +20,15 @@ h1, h2 {
 html {
   scroll-behavior: smooth;
 }
-// marre de la lumiere blanche quand je travaille
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
 
-  h2{
-    text-align: center;
-    color: #A782A1;
-    margin: 3rem 0;
-  }
-
-  p{
-    color: #FFF9A7;
-  }
-
+h2{
+  text-align: center;
+  margin: 3rem 0;
 }
-
 
 * {
   margin: 0;
 }
-
-// marre de la lumiere blanche quand je travaille A RETIRER
-
-body {
-  background-color: #FCE3D7;
-}
-
 
 a {
   text-decoration: none;
