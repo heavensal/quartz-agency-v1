@@ -42,3 +42,11 @@ nav {
   background: linear-gradient($insta-border);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
 }
+
+.number-card {
+  background-color: $violet;
+  border: 1px solid $orange;
+  h3 {
+    color: $jaune;
+  }
+}

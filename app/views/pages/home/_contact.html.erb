@@ -1,35 +1,37 @@
 <section id="contact" data-controller="contact">
-  <div class="titre">
-    <h2>Nous contacter</h2>
-  </div>
 
-  <div class="form">
+  <h2>Nous contacter</h2>
+
+  <%= form_with model: @contact, local: true, html: { class: 'form' } do |f| %>
+
     <div class="champs">
-      <label for="nom">Nom</label>
-      <input type="text" id="nom" data-action="blur->contact#handleBlur" data-contact-target="nom">
+      <%= f.label :nom %>
+      <%= f.text_field :nom, data: { action: "blur->contact#handleBlur", contact_target: "nom" } %>
       <p class="d-none text-danger fst-italic" data-contact-target="text" style="font-size: 12px;">Le nom est obligatoire</p>
 
-      <label for="prenom">Prénom</label>
-      <input type="text" id="prenom" data-action="blur->contact#handleBlur" data-contact-target="prenom">
+      <%= f.label :prenom %>
+      <%= f.text_field :prenom, data: { action: "blur->contact#handleBlur", contact_target: "prenom" } %>
       <p class="d-none text-danger fst-italic" data-contact-target="textPrenom" style="font-size: 12px;">Le prénom est obligatoire</p>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" data-action="blur->contact#handleBlur" data-contact-target="email">
+      <%= f.label :email %>
+      <%= f.email_field :email, data: { action: "blur->contact#handleBlur", contact_target: "email" } %>
       <p class="d-none text-danger fst-italic" data-contact-target="textEmail" style="font-size: 12px;">L'email est obligatoire</p>
 
-      <label for="telephone">Téléphone</label>
-      <input type="tel" id="telephone" data-action="blur->contact#handleBlur" data-contact-target="telephone">
-      <p class="d-none text-danger fst-italic" data-contact-target="textTel" style="font-size: 12px;">Le Téléphone est obligatoire</p>
+      <%= f.label :telephone %>
+      <%= f.telephone_field :telephone, data: { action: "blur->contact#handleBlur", contact_target: "telephone" } %>
+      <p class="d-none text-danger fst-italic" data-contact-target="textTel" style="font-size: 12px;">Le téléphone est obligatoire</p>
 
-      <label for="entreprise">Nom de votre entreprise</label>
-      <input type="text" id="entreprise" data-action="blur->contact#handleBlur" data-contact-target="entreprise">
+      <%= f.label :entreprise %>
+      <%= f.text_field :entreprise, data: { action: "blur->contact#handleBlur", contact_target: "entreprise" } %>
       <p class="d-none text-danger fst-italic" data-contact-target="textEts" style="font-size: 12px;">Le nom de l'entreprise est obligatoire</p>
 
-      <label for="message">Message</label>
-      <textarea id="message" data-action="blur->contact#handleBlur" data-contact-target="message"></textarea>
+      <%= f.label :message %>
+      <%= f.text_area :message, data: { action: "blur->contact#handleBlur", contact_target: "message" } %>
       <p class="d-none text-danger fst-italic" data-contact-target="textMessage" style="font-size: 12px;">Le message est obligatoire</p>
 
-      <button data-action="click->contact#submitForm", class="btn-envoyer">Envoyer</button>
+      <%= f.submit "Envoyer", data: { action: "click->contact#submitForm" }, class: "btn-envoyer" %>
     </div>
-  </div>
+
+  <% end %>
+
 </section>
