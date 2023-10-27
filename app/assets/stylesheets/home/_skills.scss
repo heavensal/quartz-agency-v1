@@ -1,7 +1,7 @@
 .presta{
-box-shadow: 0px 4px 4px #A782A1;
-margin: 2%;
-padding-bottom: 2%;
+  box-shadow: 0px 4px 4px #A782A1;
+  margin: 2%;
+  padding-bottom: 2%;
 
   h2{
     text-align: center;
@@ -35,12 +35,6 @@ padding-bottom: 2%;
 
   position: relative;
   z-index: -1;
-
-  background: rgb(253,89,73);
-  background: -moz-linear-gradient(45deg, rgba(253,89,73,1) 45%, rgba(214,36,159,1) 60%, rgba(40,90,235,1) 90%);
-  background: -webkit-linear-gradient(45deg, rgba(253,89,73,1) 45%, rgba(214,36,159,1) 60%, rgba(40,90,235,1) 90%);
-  background: linear-gradient(45deg, rgba(253,89,73,1) 45%, rgba(214,36,159,1) 60%, rgba(40,90,235,1) 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
 }
 
 .skill-img {

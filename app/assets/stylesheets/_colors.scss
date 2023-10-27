@@ -1,22 +1,40 @@
-
-
 $rose: #FDAEEE;
 $violet: #A782A1;
 $jaune: #FFF9A7;
 $orange: #FCE3D7;
 $mauve: #DAAEFC;
+
+$insta-1: rgba(253,89,73,1);
+$insta-2: rgba(214,36,159,1);
+$insta-3: rgba(40,90,235,1);
+$insta-border: 45deg, $insta-1 45%, $insta-2 60%, $insta-3 90%;
+
 body {
   background-color: $orange;
 }
 
 nav {
-  background-color: $rose;
+  background: $insta-1;
+  background: -moz-linear-gradient($insta-border);
+  background: -webkit-linear-gradient($insta-border);
+  background: linear-gradient($insta-border);
 
   #menu {
-    background-color: $rose;
+    background: $insta-1;
+    background: -moz-linear-gradient($insta-border);
+    background: -webkit-linear-gradient($insta-border);
+    background: linear-gradient($insta-border);
 
     div:hover {
       background-color: $violet;
     }
   }
+}
+
+.skill-card {
+  background: $insta-1;
+  background: -moz-linear-gradient($insta-border);
+  background: -webkit-linear-gradient($insta-border);
+  background: linear-gradient($insta-border);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
 }

@@ -9,18 +9,12 @@
 
 
 // La police d'écriture, libre à vous de tester une autre !
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=bellza&family=Inter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Cinzel&display=swap');
 body {
-
-  font-family: 'bellza', 'Arial', 'Helvetica', sans-serif;
-
-
+  font-family: 'Belleza', 'Arial', 'Helvetica', sans-serif;
 }
-
-h2 h1 {
-  font-family: 'cinzel', 'Inter', 'Arial', 'Helvetica', sans-serif;
+h1, h2 {
+  font-family: 'Cinzel', 'Inter', 'Arial', 'Helvetica', sans-serif;
 }
 
 html {

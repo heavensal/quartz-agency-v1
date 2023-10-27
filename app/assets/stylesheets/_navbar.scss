@@ -1,5 +1,4 @@
 nav {
-  background-color: #A782A1;
   display:flex;
   justify-content: space-between;
   height: 15vh;
@@ -39,7 +38,6 @@ nav {
     top:15vh;
     right: 0;
     // height:84vh;
-    background-color: #A782A1;
     font-size: 1.5em;
     transform-origin: right;   // Commence l'animation depuis la gauche
     transform: translateX(100%);     // Échelle horizontale réduite à 0
@@ -47,9 +45,6 @@ nav {
 
     div {
       padding: 1em;
-      &:hover {
-        background-color: #DAAEFC;
-      }
     }
   }
 
