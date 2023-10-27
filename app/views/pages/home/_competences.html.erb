@@ -1,34 +1,55 @@
-<section id="competences">
+<section id="skills">
   <h2>Nos compétences</h2>
 
-    <div class="competences-1">
-      <div class="competences-card ">
-        <p><%= link_to "UCG", ucg_path %></p>
-      </div>
+  <div id="skills-line-1">
 
-      <div class="competences-card">
-        <p><%= link_to "coaching", coaching_path %></p>
+    <%= link_to ucg_path do %>
+      <div class="skill-card">
+        <%= image_tag src="https://fakeimg.pl/200x200/", class: 'skill-img' %>
+        <span class="skill-link">UCG</span>
       </div>
+    <% end %>
 
-      <div class="competences-card">
-        <p><%= link_to "Community Management", communitymanagement_path %></p>
+    <%= link_to coaching_path do %>
+      <div class="skill-card">
+        <%= image_tag src="https://fakeimg.pl/200x200/", class: 'skill-img' %>
+        <span class="skill-link">Coaching</span>
       </div>
-    </div>
+    <% end %>
 
-    <div class="competences-2">
-      <div class="competences-card">
-        <p><%= link_to "Création de Contenu", contenu_path %></p>
+    <%= link_to communitymanagement_path do %>
+      <div class="skill-card">
+        <%= image_tag src="https://fakeimg.pl/200x200/", class: 'skill-img' %>
+        <span class="skill-link">Community Management</span>
       </div>
+    <% end %>
 
-      <div class="competences-card">
-      <p><%= link_to "Site Internet", website_path %></p>
+  </div>
+
+  <div id="skills-line-2">
+
+    <%= link_to contenu_path do %>
+      <div class="skill-card">
+        <%= image_tag src="https://fakeimg.pl/200x200/", class: 'skill-img' %>
+        <span class="skill-link">Création de contenu</span>
       </div>
+    <% end %>
 
-      <div class="competences-card">
-      <p><%= link_to "MasterClass", masterclass_path %></p>
+    <%= link_to website_path do %>
+      <div class="skill-card">
+        <%= image_tag src="https://fakeimg.pl/200x200/", class: 'skill-img' %>
+        <span class="skill-link">Site Internet</span>
       </div>
+    <% end %>
 
-    </div>
+    <%= link_to masterclass_path do %>
+      <div class="skill-card">
+        <%= image_tag src="https://fakeimg.pl/200x200/", class: 'skill-img' %>
+        <span class="skill-link">MasterClass</span>
+      </div>
+    <% end %>
+
+  </div>
 
   <div class="chiffres-cles">
     <div class="chiffres">

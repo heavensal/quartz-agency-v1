@@ -1,0 +1,58 @@
+.presta{
+box-shadow: 0px 4px 4px #A782A1;
+margin: 2%;
+padding-bottom: 2%;
+
+  h2{
+    text-align: center;
+  }
+}
+
+#skills {
+  // padding: 5rem;
+}
+
+#skills-line-1 {
+  width: 75%;
+  margin-left: auto;
+  margin-right: 5rem;
+  display: flex;
+  justify-content:space-between;
+}
+
+#skills-line-2 {
+  width: 75%;
+  margin-left: 5rem;
+  display: flex;
+  justify-content:space-between;
+}
+
+.skill-card {
+  width: 216px;
+  height: 216px;
+  padding: 8px;
+  border-radius: 50%;
+
+  position: relative;
+  z-index: -1;
+
+  background: rgb(253,89,73);
+  background: -moz-linear-gradient(45deg, rgba(253,89,73,1) 45%, rgba(214,36,159,1) 60%, rgba(40,90,235,1) 90%);
+  background: -webkit-linear-gradient(45deg, rgba(253,89,73,1) 45%, rgba(214,36,159,1) 60%, rgba(40,90,235,1) 90%);
+  background: linear-gradient(45deg, rgba(253,89,73,1) 45%, rgba(214,36,159,1) 60%, rgba(40,90,235,1) 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
+}
+
+.skill-img {
+  border: 8px solid white;
+  border-radius: 50%;
+}
+
+.skill-link {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}

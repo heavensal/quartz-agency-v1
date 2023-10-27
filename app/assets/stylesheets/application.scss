@@ -2,6 +2,7 @@
 
 @import 'components/index';
 @import 'pages/index';
+@import 'home/index';
 
 @import 'colors';
 @import 'navbar';
@@ -33,7 +34,9 @@ body {
   margin: 0;
 
   h2{
+    text-align: center;
     color: #A782A1;
+    margin: 3rem 0;
   }
 
   p{
