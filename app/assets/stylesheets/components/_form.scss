@@ -1,11 +1,3 @@
-#contact{
-  margin-bottom: 2%;
-
-  h2{
-    margin-bottom: 1%;
-  }
-}
-
 .form{
   width: 50%;
   margin: auto;
@@ -28,7 +20,6 @@
     margin: 2% 0; // Ajoutez une marge en haut et en bas de l'input
     border: none; // Enlevez la bordure si nécessaire
     // Ajoutez un rayon de bordure si nécessaire
-    background-color: #DAAEFC;
     border-radius: 10px;
 
   }
@@ -118,7 +109,7 @@
   border: none; // Enlevez la bordure si nécessaire
   background-color: #A782A1;
   border-radius: 15px;
-  border: 5px solid #FDAEEE;
+  border: 1px solid #FDAEEE;
   font-size: 16px;
   color: #FFF9A7;
 }
