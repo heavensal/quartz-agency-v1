@@ -6,10 +6,13 @@
   .clair{
     background-color: #FFDFD3;
     height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     img {
-      width: 100%; /* L'image prend 100% de la largeur du conteneur parent (grille) */
-      height: 100%; /* L'image prend 100% de la hauteur du conteneur parent (grille) */
-      // object-fit: cover; /* Redimensionne l'image pour remplir complètement le conteneur sans déformer */
+      width: 250px;
+      height: 150px;
     }
     }
 
