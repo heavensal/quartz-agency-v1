@@ -4,15 +4,18 @@
   align-content: center;
 
   .clair{
-    background-color: #DAAEFC;
+    background-color: #FFDFD3;
+    height: 150px;
     img {
-      height: 150px;
+      width: 100%; /* L'image prend 100% de la largeur du conteneur parent (grille) */
+      height: 100%; /* L'image prend 100% de la hauteur du conteneur parent (grille) */
+      // object-fit: cover; /* Redimensionne l'image pour remplir complètement le conteneur sans déformer */
     }
     }
 
 
   .fonce {
-    background-color: #A782A1;
+    background-color: #D291BC;
     }
 }
 
@@ -23,19 +26,59 @@
 
 img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   justify-self: center;
   align-self: center;
   margin-bottom: 2%;
 }
+}
+
+.prez{
+  border-radius: 35% 15%;
+  margin: 4%;
+
+span {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: #A782A1;
+  margin-top: 5%;
+
+  }
 
 p {
   color: #A782A1;
-  box-shadow: 5px #FDB8BA;
-  text-align: center;
-  margin: 5%;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+
 }
+
+ul{
+  color: #A782A1;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+li {
+  color: #A782A1;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+br{
+  color: #A782A1;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
 }
 
   @media(min-width: 768px) and (max-width: 1388px) {
