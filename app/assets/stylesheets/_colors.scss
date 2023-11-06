@@ -49,10 +49,41 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
 }
 
+// .prez{
+//   background: $insta-1;
+//   background: -moz-linear-gradient($insta-border);
+//   background: -webkit-linear-gradient($insta-border);
+//   background: linear-gradient($insta-border);
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
+// }
+
+.btn-contact{
+  background: $insta-1;
+  background: -moz-linear-gradient($insta-border);
+  background: -webkit-linear-gradient($insta-border);
+  background: linear-gradient($insta-border);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
+}
+
+
+.champs{
+  background: $insta-1;
+  background: -moz-linear-gradient($insta-border);
+  background: -webkit-linear-gradient($insta-border);
+  background: linear-gradient($insta-border);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
+}
+
+
 .number-card {
-  background-color: $violet;
-  border: 1px solid $orange;
+  background: $insta-1;
+  background: -moz-linear-gradient($insta-border);
+  background: -webkit-linear-gradient($insta-border);
+  background: linear-gradient($insta-border);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd5949",endColorstr="#285aeb",GradientType=1);
+  border: 1px solid $pastel-2;
   h3 {
-    color: $jaune;
-  }
+    color: #957DAD;
+
+}
 }
