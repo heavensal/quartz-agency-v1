@@ -2,57 +2,33 @@
 
 @import 'components/index';
 @import 'pages/index';
+@import 'home/index';
 
 @import 'colors';
 @import 'navbar';
 
 
 // La police d'écriture, libre à vous de tester une autre !
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=bellza&family=Inter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Cinzel&display=swap');
 body {
-
-  font-family: 'bellza', 'Arial', 'Helvetica', sans-serif;
-
-
+  font-family: 'Belleza', 'Arial', 'Helvetica', sans-serif;
 }
-
-h2 h1 {
-  font-family: 'cinzel', 'Inter', 'Arial', 'Helvetica', sans-serif;
+h1, h2 {
+  font-family: 'Cinzel', 'Inter', 'Arial', 'Helvetica', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
-// marre de la lumiere blanche quand je travaille
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
 
-  h2{
-    color: #A782A1;
-  }
-
-  p{
-    color: #FFF9A7;
-  }
-
+h2{
+  text-align: center;
+  margin: 3rem 0;
 }
-
 
 * {
   margin: 0;
 }
-
-// marre de la lumiere blanche quand je travaille A RETIRER
-
-body {
-  background-color: #FCE3D7;
-}
-
 
 a {
   text-decoration: none;

@@ -1,15 +1,14 @@
+<%= video_tag 'intro.mp4', autoplay: true, loop: true, muted: true %>
+
 <div class="container">
-
-  <div class="video">
-    <%= image_tag("")%>
-  </div>
-
   <div class="btn-contact">
     <%= link_to "Nous contacter", "#contact", aria: {label:"Contact"}%>
   </div>
 </div>
 
-<%= render "pages/home/competences"%>
+<%= link_to 'Nous contacter', '#contact', class: 'cta-button' %>
+
+<%= render "pages/home/skills"%>
 
 <%= render "pages/home/clients"%>
 

@@ -3,14 +3,15 @@ class ContactsController < ApplicationController
   end
 
   def create
-    nom = params[:contact][:nom]
-    email = params[:contact][:email]
-    message = params[:contact][:message]
+    nom = params[:nom]
+    prenom = params[:prenom]
+    email = params[:email]
+    telephone = params[:telephone]
+    entreprise = params[:entreprise]
+    message = params[:message]
 
+    ContactMailer.formulaire_de_contact(nom, prenom, email, telephone, entreprise, message).deliver_now!
 
-    ContactMailer.formulaire_de_contact(nom, email, message).deliver_now!
-
-    # Redirigez l'utilisateur après l'envoi du formulaire
     redirect_to root_path, notice: 'Votre message a été envoyé avec succès!'
   end
 end
