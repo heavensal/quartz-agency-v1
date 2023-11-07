@@ -1,10 +1,10 @@
 .footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  background-color: #A782A1;
   align-items: center;
   padding: 1%;
   width: 100%;
+  margin-top: 1%;
 p {
   color: black;
   margin-left: 2%;
@@ -19,6 +19,19 @@ p {
   }
 }
 
+.logo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rs{
+  padding: 1%;
+
+  img {
+    width: 50%
+  }
+}
+
 @media(min-width: 768px) and (max-width: 1388px) {
   // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
 }
@@ -30,8 +43,4 @@ p {
     padding: 1%;
   }
 
-  .rs{
-    justify-self: center;
-    align-self: center;
-  }
 }

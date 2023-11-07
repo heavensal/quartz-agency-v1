@@ -87,3 +87,10 @@ nav {
 
 }
 }
+
+.footer{
+  background: $rose;
+  background: -moz-linear-gradient($insta-border);
+  background: -webkit-linear-gradient($insta-border);
+  background: linear-gradient($insta-border);
+}

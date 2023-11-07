@@ -1,6 +1,6 @@
 .btn-contact{
   position: absolute;
-  top: 135%;
+  top: 900px;
   right: 0%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
@@ -21,20 +21,59 @@
   text-align: center;
 }
 
+@media(min-width:950px) and (max-width: 1200px){
+  .btn-contact{
+   position: absolute;
+    top: 600px;
+    right: 0%;
+  }
+  }
 
-@media(min-width: 292px) and (max-width: 992px) {
+// @media(min-width:921px){
+//  .btn-contact{
+//   position: absolute;
+//    top: 720px;
+//    right: 0%;
+//  }
+//  }
+
+@media(min-width: 720px) and (max-width: 950px) {
+  .btn-contact{
+    position: absolute;
+    top: 560px;
+    right: 0%;
+  }
+}
+
+@media(min-width: 621px) and (max-width: 720px) {
+  .btn-contact{
+    position: absolute;
+    top: 440px;
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .btn-contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 620px){
   .btn-contact{
     position: relative;
-    top: 10%;
+    top: 10px;
     left: 50%;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     flex-shrink: 0;
     background-color: #DAAEFC;
-    display: block;
-    text-align: center;
-    line-height: 150px;
+    line-height: 110px;
    a {
     text-decoration: none;
     color: black;
