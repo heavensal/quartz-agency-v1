@@ -1,0 +1,34 @@
+#creation-contenu {
+  height:100vh;
+}
+
+.cc-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  margin: 2%;
+
+  video {
+    width: 300px;
+    height: 450px;
+    filter: brightness(60%);
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presta{
+  margin: 2%;
+  padding-bottom: 2%;
+
+  p {
+    text-align: justify;
+    margin: 3%;
+    font-size: 18px;
+  }
+}
