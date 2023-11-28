@@ -5,31 +5,10 @@
   padding: 1%;
   width: 100%;
   margin-top: 1%;
-p {
-  color: black;
-  margin-left: 2%;
-}
-}
 
-.portfolio{
-  text-align: center;
-
-  p{
-    color: #FFF9A7;
-  }
-}
-
-.logo{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.rs{
-  padding: 1%;
-
-  img {
-    width: 50%
-  }
+a{
+  color:black;
+  text-decoration: none;
 }
 
 @media(min-width: 768px) and (max-width: 1388px) {
@@ -37,10 +16,51 @@ p {
 }
 
 @media(max-width: 767px) {
-  .footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1%;
+  grid-template-columns: 1fr; // Une colonne pour les petits écrans
+  text-align: center; // Centrer le texte pour une meilleure lisibilité
+}
+
+}
+
+.portfolio{
+  text-align: center;
+
+  p{
+    color: #FFF9A7;
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 2px; // Espacement entre les éléments de la grille
+  place-content: center; // Centrer les éléments horizontalement et verticalement
+
+  @media(min-width: 768px) and (max-width: 1388px) {
+    // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
   }
 
+  @media(max-width: 767px) {
+   grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+   gap: 2px;
+   place-content: center;
+  }
+}
+
+.rs{
+  padding: 1%;
+
+  img {
+    width: 40%
+  }
+
+  @media(min-width: 768px) and (max-width: 1388px) {
+    // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
+  }
+
+  @media(max-width: 767px) {
+    display: grid;
+    place-content: center;
+  }
 }

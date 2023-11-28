@@ -1,23 +1,46 @@
 <div class="footer">
-  <div style="margin: 1%"><p>A propos</p> <p>Nous contacter</p></div>
+  <div>
+    <%= link_to root_path+'#apropos' do%>
+      <div>A propos</div>
+    <% end %>
+    <%= link_to root_path+'#contact' do%>
+      <div>Nous contacter</div>
+    <% end %>
+  </div>
 
-  <div style="margin: 1%"><p>Ils parlent de nous</p><p>Ils nous font confiance</p></div>
+  <div>
+    <div>Ils parlent de nous</div>
+    <%= link_to root_path+'#clients' do%>
+      <div>Ils nous font confiance</div>
+    <% end%>
+  </div>
 
-  <div class="portfolio"><p>PORTFOLIO</p></div>
+  <div class="portfolio">
+    <p>PORTFOLIO</p>
+  </div>
 
-  <div style="margin: 1%"><p>CGV</p><p>Made with 🖤 by Alice & Adam</p></div>
+  <div>
+    <div>CGV</div>
+    <div>Made with 🖤 by Alice & Adam</div>
+  </div>
 
   <div class="logo">
     <div class="rs">
-      <%= image_tag("logo-linkedin.svg", alt:"linkedin")%>
+    <%= link_to"https://www.linkedin.com/company/quartz-agency/", target:"_blank" do %>
+      <%= image_tag("logo-linkedin.png", alt:"linkedin")%>
+    <% end %>
     </div>
 
     <div class="rs">
+    <%= link_to"https://www.instagram.com/quartzagency_/", target:"_blank" do %>
       <%= image_tag("logo-insta.jpg", alt:"instagram")%>
+    <%end%>
     </div>
 
     <div class="rs">
+    <%= link_to"https://www.tiktok.com/@quartzagency_", target:"_blank" do %>
       <%= image_tag("logo-tiktok.svg", alt:"tiktok")%>
+    <%end%>
     </div>
 
   </div>

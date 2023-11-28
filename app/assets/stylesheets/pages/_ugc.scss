@@ -1,0 +1,66 @@
+.ugc-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  }
+
+  #skillCarouselUgc {
+    height: 400px;
+    .carousel-inner:hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 14s ease-in-out infinite !important;
+      video {
+        width: 300px;
+        height: 450px;
+        filter: brightness(60%);
+      }
+    }
+  }
+
+  .style{
+    box-shadow: 10px 5px 5px #A782A1;
+  }
+
+  .carousel-item {
+    position: relative;
+    padding: 8px;
+    transition: transform 14s ease-in-out infinite !important;
+
+    video {
+      width: 300px;
+      height: 450px;
+      filter: brightness(60%);
+
+    }
+
+  }
+  .carousel-item :active{
+    height: 300px;
+    padding: 8px;
+    transition: transform 14s ease-in-out infinite !important;
+
+    video {
+      width: 300px;
+      height: 450px;
+      filter: brightness(60%);
+
+    }
+
+  }
+
+
+  @media screen and (max-width: 992px) {
+    #skillsCarousel {
+      .carousel-item {
+        height: 480px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+    }
+  }
