@@ -19,4 +19,7 @@ class PagesController < ApplicationController
 
   def website
   end
+
+  def cgv
+  end
 end

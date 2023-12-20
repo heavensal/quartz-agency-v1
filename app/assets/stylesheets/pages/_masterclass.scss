@@ -14,7 +14,6 @@ margin: 2%;
     justify-content: center;
     align-items: center;
     img {
-      // animation: rotate 1s ease-in-out infinite;
       width: 450px;
       height: 300px;
     }
@@ -42,18 +41,6 @@ margin: 2%;
     height: 300px;
   }
 
-}
-
-.presta{
-  // box-shadow: 0px 4px 4px #A782A1;
-  margin: 2%;
-  padding-bottom: 2%;
-
-  p {
-    text-align: justify;
-    margin: 3%;
-    font-size: 18px;
-  }
 }
 
 @media screen and (max-width: 992px) {
